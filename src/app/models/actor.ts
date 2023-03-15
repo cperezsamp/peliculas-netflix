@@ -7,6 +7,7 @@ export class Actor{
     vivo: boolean;
     imagen: string;
 
+
     constructor(nombre: string, edad: number, clip: string, nacionalidad: string, vivo: boolean, imagen: string){
         this.nombre= nombre;
         this.edad= edad;

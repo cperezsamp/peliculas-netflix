@@ -14,17 +14,17 @@ export class PeliculasService {
 
   constructor(private actores: ActoresService) { 
 
-    this.peliculas.push(new Pelicula("Lo que el viento se llevo", 238, 1939))
-    this.peliculas[0].addPersonaje(new Personaje(actores.clarkGabel, "Rhett Butler ", "visitante de Charleston"));   
-    this.peliculas[0].addPersonaje(new Personaje(actores.leslieHoward, "Ashley Wilkes", "hijo"));
-    this.peliculas[0].addPersonaje(new Personaje(actores.vivienLeigh, "Scarlett O'Hara", "hija"));
-    this.peliculas[0].addPersonaje(new Personaje(actores.oliviadehavillan, "Melanie Hamilton", "prima"));
+    this.peliculas.push(new Pelicula("Lo que el viento se llevo", 238, 1939, "loqueelvientosellevo.jpeg", "Francis Ford Coppola"))
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Calrk Gable"), "Rhett Butler ", "visitante de Charleston"));   
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Vivien Leigh"), "Ashley Wilkes", "hijo"));
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Leslie Howard"), "Scarlett O'Hara", "hija"));
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Olivia de Havilland"), "Melanie Hamilton", "prima"));
 
-    this.peliculas.push(new Pelicula("El padrino", 177, 1972))
-    this.peliculas[1].addPersonaje(new Personaje(actores.marlonBrando, "Don Vito Corleone", "Padrino"));   
-    this.peliculas[1].addPersonaje(new Personaje(actores.alPacino, "Michael Corleone", "Hijo menor del padrino"));
-    this.peliculas[1].addPersonaje(new Personaje(actores.robertDubball, "Thomas Hagen", "Consejero"));
-    this.peliculas[1].addPersonaje(new Personaje(actores.jamesCaan, "Santino Corleone", "Hijo mayor del padrino"));
+    this.peliculas.push(new Pelicula("El padrino", 177, 1972, "elpadrino.jpeg", "Victor Fleming"))
+    this.peliculas[1].addPersonaje(new Personaje(actores.findByName("Marlon Brando"), "Don Vito Corleone", "Padrino"));   
+    this.peliculas[1].addPersonaje(new Personaje(actores.findByName("Al Pacino"), "Michael Corleone", "Hijo menor del padrino"));
+    this.peliculas[1].addPersonaje(new Personaje(actores.findByName("Robert Duvall"), "Thomas Hagen", "Consejero"));
+    this.peliculas[1].addPersonaje(new Personaje(actores.findByName("James Caan"), "Santino Corleone", "Hijo mayor del padrino"));
 
     /*
     this.loQueElVientoSeLlevo= new Pelicula("Lo que el viento se llevo", 238, 1939);
