@@ -1,4 +1,3 @@
-import {Actor} from './actor'
 import {Personaje} from './personaje';
 
 
