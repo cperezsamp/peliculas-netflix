@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PeliculasService } from '../peliculas.service';
+import { ActoresService } from '../actores.service';
+import { Personaje } from '../models/personaje';
+
 
 @Component({
   selector: 'app-actors',
@@ -7,11 +9,12 @@ import { PeliculasService } from '../peliculas.service';
   styleUrls: ['./actors.component.css']
 })
 export class ActorsComponent {
-  @Input() actores: any = []
-  constructor(private peliculasService: PeliculasService) {
-  }
+  @Input() personaje: Personaje;
 
+  constructor(private actoresService: ActoresService) {
+  }
+  
   ngOnInit() {
-    this.actores = this.peliculasService.getPersonajes(0)
+    
   }
 }

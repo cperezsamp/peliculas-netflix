@@ -11,6 +11,7 @@ export class Pelicula {
     director: string;
     personajes: Personaje[] = [];
     argumento: string;
+    id: number;
 
 
 
@@ -27,4 +28,7 @@ export class Pelicula {
         this.personajes.push(personaje);
     }
 
+    setImmediate(id: number){
+        this.id= id;
+    }
 }

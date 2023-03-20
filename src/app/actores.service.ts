@@ -26,7 +26,7 @@ export class ActoresService {
     this.actores.push(new Actor("Olivia de Havilland", 104, "clip.mp4", "estadounidense", false, "assets/images/actors/oliviadehavillan.jpeg"));
     this.actores.push(new Actor("Marlon Brando", 80, "clip.mp4", "estadounidense", false, "assets/images/actors/marlonbrando.jpeg"));
     this.actores.push(new Actor("Al Pacino", 82, "clip.mp4", "estadounidense", true, "assets/images/actors/alpacino.jpeg"));
-    this.actores.push(new Actor("Robert Duvall", 92, "clip.mp4", "estadounidense", true, "assets/images/actors/robertduvall.jpeg"));
+    this.actores.push(new Actor("Robert Duvall", 92, "clip.mp4", "estadounidense", true, "assets/images/actors/roberduvall.jpeg"));
     this.actores.push(new Actor("James Caan", 82, "clip.mp4", "estadounidense", false, "assets/images/actors/jamescaan.jpeg"));
 
     //this.clarkGabel= new Actor("Clark Gable", 59, "", "estadounidense", false, "");

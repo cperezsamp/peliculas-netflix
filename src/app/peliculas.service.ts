@@ -16,8 +16,8 @@ export class PeliculasService {
 
     this.peliculas.push(new Pelicula("Lo que el viento se llevo", 238, 1939, "assets/images/films/loqueelvientosellevo.jpeg", "Francis Ford Coppola", "En vísperas del inicio de la guerra de Secesión en 1861, la joven Scarlett O'Hara vive con sus padres y dos hermanas en «Tara», la plantación de algodón de su familia en Georgia. Scarlett se entera de que Ashley Wilkes, del que está enamorada en secreto, se va a casar con su prima Melanie Hamilton y que el compromiso será anunciado al día siguiente en una barbacoa que se va a celebrar en la casa de Ashley, la cercana plantación «Los doce robles»."))
     this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Calrk Gable"), "Rhett Butler ", "visitante de Charleston"));
-    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Vivien Leigh"), "Ashley Wilkes", "hijo"));
-    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Leslie Howard"), "Scarlett O'Hara", "hija"));
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Vivien Leigh"), "Scarlett O'Hara", "hija"));
+    this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Leslie Howard"), "Ashley Wilkes", "hijo"));
     this.peliculas[0].addPersonaje(new Personaje(actores.findByName("Olivia de Havilland"), "Melanie Hamilton", "prima"));
 
     this.peliculas.push(new Pelicula("El padrino", 177, 1972, "assets/images/films/elpadrino.jpeg", "Victor Fleming", "La historia comienza en el verano de 1945, cuando se celebra la boda de Connie (Talia Shire) y Carlo Rizzi (Gianni Russo). Connie es la hija de Don Vito Corleone (Marlon Brando), cabeza de la familia Corleone, y jefe de una de las cinco familias que ejercen el mando de la Cosa Nostra en la ciudad de Nueva York. Con el argumento de que todo siciliano debe atender las peticiones que le hacen el día de la boda de su hija, Don Vito es visitado, en el primer plano de la acción, por Amerigo Bonasera, dueño de una funeraria."))

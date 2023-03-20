@@ -1,26 +1,27 @@
 <div class="container">
     <div class="row">
-        <section class="wrapper col-2">
+        <section class="wrapper col-3">
             <div class="search-box">
                 <h2>Watchlist</h2>
                 <app-buscador></app-buscador>
             </div>
         </section>
-        <div class=" col-10">
+        <div class="col-9">
             <div  *ngFor=" let pelicula of peliculas" >
-                <div class="img-box">
-                    <img src={{pelicula.image}} alt="Pelicula 1 image">
-                </div>
-                <div class="desc-box">
+                <div class="img-box row">
+                    <img class="float-left col-3" src={{pelicula.image}} alt="Pelicula 1 image">
+                    <div class="desc-box col-9">
                     <h1>{{pelicula.titulo}} ({{pelicula.anyo}})</h1>
                     <p>Acción, Drama - {{pelicula.duracionMinutos}}</p>
                     <h3>Overview</h3>
                     <p>{{pelicula.argumento}}</p>
-                </div>
-                <section class="cast-wrapper">
+                    </div>
+                </div>            
+                <section class="row">
                     <h6>Cast</h6>
-                    <app-actors></app-actors>
+                    <app-actors class="col-3 m-1" *ngFor="let personaje of pelicula.personajes" [personaje]="personaje"></app-actors>
                 </section>
+                <br><hr>
             </div>
         </div>
 </div>
