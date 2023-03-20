@@ -10,6 +10,7 @@ import { BuscadorPipe } from './buscador.pipe';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { FormsModule } from '@angular/forms';
 import { ActorsComponent } from './actors/actors.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
 
 
 
@@ -20,6 +21,7 @@ import { ActorsComponent } from './actors/actors.component';
     BuscadorPipe,
     BuscadorComponent,
     ActorsComponent,
+    PeliculasComponent,
   ],
   imports: [
     BrowserModule,

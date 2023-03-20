@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <section class="wrapper col-2">
+            <div class="search-box">
+                <h2>Watchlist</h2>
+                <app-buscador></app-buscador>
+            </div>
+        </section>
+        <div class=" col-10">
+            <div  *ngFor=" let pelicula of peliculas" >
+                <div class="img-box">
+                    <img src={{pelicula.image}} alt="Pelicula 1 image">
+                </div>
+                <div class="desc-box">
+                    <h1>{{pelicula.titulo}} ({{pelicula.anyo}})</h1>
+                    <p>Acción, Drama - {{pelicula.duracionMinutos}}</p>
+                    <h3>Overview</h3>
+                    <p>{{pelicula.argumento}}</p>
+                </div>
+                <section class="cast-wrapper">
+                    <h6>Cast</h6>
+                    <app-actors></app-actors>
+                </section>
+            </div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+
