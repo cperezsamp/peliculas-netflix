@@ -1,0 +1,14 @@
+.wrapper {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor-wrapper {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}

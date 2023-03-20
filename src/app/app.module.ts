@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ActoresService} from './actores.service';
+import { ActoresService } from './actores.service';
 import { PeliculasService } from './peliculas.service';
 import { PlayerComponent } from './player/player.component';
 import { BuscadorPipe } from './buscador.pipe';
@@ -18,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     PlayerComponent,
     BuscadorPipe,
     BuscadorComponent,
-    
   ],
   imports: [
     BrowserModule,
