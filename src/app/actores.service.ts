@@ -23,7 +23,7 @@ export class ActoresService {
     this.actores.push(new Actor("Calrk Gable", 59, "clip.mp4", "estadounidense", false, "assets/images/actors/clarkgable.jpeg"));
     this.actores.push(new Actor("Vivien Leigh", 53, "clip.mp4", "britanica", false, "assets/images/actors/vivienleight.jpeg"));
     this.actores.push(new Actor("Leslie Howard", 50, "clip.mp4", "britanica", false, "assets/images/actors/lesliHoward.jpeg"));
-    this.actores.push(new Actor("Olivia de Havilland", 104, "clip.mp4", "estadounidense", false, "assets/images/actors/oliviadehavilland.jpeg"));
+    this.actores.push(new Actor("Olivia de Havilland", 104, "clip.mp4", "estadounidense", false, "assets/images/actors/oliviadehavillan.jpeg"));
     this.actores.push(new Actor("Marlon Brando", 80, "clip.mp4", "estadounidense", false, "assets/images/actors/marlonbrando.jpeg"));
     this.actores.push(new Actor("Al Pacino", 82, "clip.mp4", "estadounidense", true, "assets/images/actors/alpacino.jpeg"));
     this.actores.push(new Actor("Robert Duvall", 92, "clip.mp4", "estadounidense", true, "assets/images/actors/robertduvall.jpeg"));
@@ -42,13 +42,5 @@ export class ActoresService {
 
   findByName(name: string): Actor {
     return this.actores.find(element => element.nombre === name) as Actor
-  }
-
-  getActores() {
-    return this.actores;
-  }
-
-  getActor(i: number) {
-    return this.actores[i]
   }
 }

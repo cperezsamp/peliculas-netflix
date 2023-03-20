@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.pelicula = this.peliculasService.getPelicula(0)
     this.actores = this.pelicula.personajes
-    console.log('this.actores', this.actores)
   }
 
 }

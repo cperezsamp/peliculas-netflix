@@ -9,6 +9,7 @@ import { PlayerComponent } from './player/player.component';
 import { BuscadorPipe } from './buscador.pipe';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { FormsModule } from '@angular/forms';
+import { ActorsComponent } from './actors/actors.component';
 
 
 
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     PlayerComponent,
     BuscadorPipe,
     BuscadorComponent,
+    ActorsComponent,
   ],
   imports: [
     BrowserModule,

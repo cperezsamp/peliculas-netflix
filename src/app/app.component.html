@@ -1,10 +1,21 @@
-<div class="wrapper">
-    <h1>{{pelicula.titulo}}</h1>
-    <p>Duración: {{pelicula.duracionMinutos}}</p>
-    <p>Año: {{pelicula.anyo}}</p>
-    <p>Director: {{pelicula.director}}</p>
-    <img src={{pelicula.image}} alt="Pelicula 1 image">
-</div>
+<section class="wrapper">
+    <div class="search-box">
+        <h2>Watchlist</h2>
+        <app-buscador></app-buscador>
+    </div>
+    <div class="img-box">
+        <img src={{pelicula.image}} alt="Pelicula 1 image">
+    </div>
+    <div class="desc-box">
+        <h1>{{pelicula.titulo}} ({{pelicula.anyo}})</h1>
+        <p>Acción, Drama - {{pelicula.duracionMinutos}}</p>
+        <h3>Overview</h3>
+        <p>{{pelicula.argumento}}</p>
+    </div>
+</section>
+<section class="cast-wrapper">
+    <h6>Cast</h6>
+    <app-actors></app-actors>
+</section>
 
 
-<app-buscador></app-buscador>
