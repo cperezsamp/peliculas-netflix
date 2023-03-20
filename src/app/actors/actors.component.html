@@ -1,0 +1,11 @@
+<div class="wrapper">
+<div class="personaje-box"  *ngFor="let actor of actores">
+    <img class="img-personaje" src={{actor.actor.imagen}} alt="Pelicula 1 image">
+    <div class="desc-personaje">
+        <h6>{{actor.actor.nombre}} as {{actor.nombrePersonaje}}</h6>
+        <p>{{actor.descripcion}}</p>
+    </div>
+    
+</div>
+
+</div>
