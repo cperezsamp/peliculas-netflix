@@ -19,6 +19,5 @@ export class ActorDetailsComponent {
   ngOnInit(): void{
     this.actorId= this.route.snapshot.params['id'];	  
     this.actor=  this.actoresService.findOneById(this.actorId);
-    console.log(this.actor.clip);
   }
 }

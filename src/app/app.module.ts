@@ -15,9 +15,10 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
 import { RouterModule, Routes } from '@angular/router';
 
 
+
 const routes: Routes=[
  {path: '', component:PeliculasComponent} ,
- {path: 'actor/:id', component:ActorDetailsComponent}
+ {path: 'actor/:id', component:ActorDetailsComponent},
 ];
 
 
