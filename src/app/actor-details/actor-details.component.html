@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="shearch">
+      <h2>Cast</h2>
+      <app-buscador></app-buscador>
+    </div>
+    >
+    <div class="actor-details">
+      <img
+        class="float-left col-3"
+        src="{{ actor.imagen }}"
+        alt="{{ actor.nombre }} image"
+      />
+      <h2>Nombre: {{ actor.nombre }}</h2>
+
+      <p>{{ personaje.descripcon }}</p>
+
+      <p>Edad: {{ actor.edad }}</p>
+      <p>Nacionalidad: {{ actor.nacionalidad }}</p>
+
+      <video controls>
+        <source
+          src="/peliculas-netflix/src/assets/media/clip.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  </div>
+</div>
