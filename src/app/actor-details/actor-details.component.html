@@ -1,20 +1,23 @@
 <div class="shearch">
   <app-buscador></app-buscador>
 </div>
-<div class="row m-5 ">
-  <div class="actor-details">
+<div class="row m-2 ">
+  <div class="actor-details float-left  col-2">
     <img
-      class="float-left col-3"
+      class=""
       src="{{ actor.imagen }}"
       alt="{{ actor.nombre }} image"
     />
+  </div>
+  <div class=" m-2 col-8">
     <h2>Nombre: {{ actor.nombre }}</h2>
     <div *ngIf="!actor.vivo; esle elseBlock">
       <p>Edad: {{ actor.edad }} (fallecido)</p>
     </div>
     <p #elseBlock>Edad: {{ actor.edad }}</p>
     <p>Nacionalidad: {{ actor.nacionalidad }}</p>
-
-   <!-- poner el video component recibiendo variables -->
-    </div>
+  </div>  
+   <app-player [video]="actor.clip"></app-player>
+    
 </div>
+

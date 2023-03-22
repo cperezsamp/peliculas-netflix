@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-player',
   templateUrl: './player.component.html',
@@ -7,13 +8,19 @@ import { Component, Input } from '@angular/core';
 })
 
 
+
 export class PlayerComponent {
   
-  //@Input() video: string;
-  //video: string;
+  @Input() video: string;
+  ruta: string= "../assests/media/";
+  urlVideo: string;
 
-  /*constructor(video: string){
-    this.video= video;
-  }*/
+  constructor(){
+    this.urlVideo= this.ruta + this.video;
+  }
+
+  ngOnInit(){
+    
+  }
 
 }
