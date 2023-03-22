@@ -11,6 +11,7 @@ import { BuscadorComponent } from './buscador/buscador.component';
 import { FormsModule } from '@angular/forms';
 import { ActorsComponent } from './actors/actors.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
+import { ActorDetailsComponent } from './actor-details/actor-details.component';
 
 
 
@@ -22,6 +23,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
     BuscadorComponent,
     ActorsComponent,
     PeliculasComponent,
+    ActorDetailsComponent,
   ],
   imports: [
     BrowserModule,
