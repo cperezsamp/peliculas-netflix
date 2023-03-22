@@ -9,7 +9,8 @@ export class Actor{
     id: number;
 
 
-    constructor(nombre: string, edad: number, clip: string, nacionalidad: string, vivo: boolean, imagen: string){
+    constructor(id: number,nombre: string, edad: number, clip: string, nacionalidad: string, vivo: boolean, imagen: string){
+        this.id= id;
         this.nombre= nombre;
         this.edad= edad;
         this.clip= clip;
@@ -17,7 +18,7 @@ export class Actor{
         this.vivo= vivo;
         this.imagen= imagen;
     }
-
+    
     setId(id:number){
         this.id= id;
     }

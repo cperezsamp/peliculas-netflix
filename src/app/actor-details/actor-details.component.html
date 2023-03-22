@@ -1,29 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div class="shearch">
-      <h2>Cast</h2>
-      <app-buscador></app-buscador>
+<div class="shearch">
+  <app-buscador></app-buscador>
+</div>
+<div class="row m-5 ">
+  <div class="actor-details">
+    <img
+      class="float-left col-3"
+      src="{{ actor.imagen }}"
+      alt="{{ actor.nombre }} image"
+    />
+    <h2>Nombre: {{ actor.nombre }}</h2>
+    <div *ngIf="!actor.vivo; esle elseBlock">
+      <p>Edad: {{ actor.edad }} (fallecido)</p>
     </div>
-    >
-    <div class="actor-details">
-      <img
-        class="float-left col-3"
-        src="{{ actor.imagen }}"
-        alt="{{ actor.nombre }} image"
-      />
-      <h2>Nombre: {{ actor.nombre }}</h2>
+    <p #elseBlock>Edad: {{ actor.edad }}</p>
+    <p>Nacionalidad: {{ actor.nacionalidad }}</p>
 
-      <p>{{ personaje.descripcon }}</p>
-
-      <p>Edad: {{ actor.edad }}</p>
-      <p>Nacionalidad: {{ actor.nacionalidad }}</p>
-
-      <video controls>
-        <source
-          src="/peliculas-netflix/src/assets/media/clip.mp4"
-          type="video/mp4"
-        />
-      </video>
+   <!-- poner el video component recibiendo variables -->
     </div>
-  </div>
 </div>
