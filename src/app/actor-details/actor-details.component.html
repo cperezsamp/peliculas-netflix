@@ -1,7 +1,7 @@
 <div class="shearch">
   <app-buscador></app-buscador>
 </div>
-<div class="row m-2 ">
+<div class="row m-4">
   <div class="actor-details float-left  col-2">
     <img
       class=""
@@ -9,7 +9,7 @@
       alt="{{ actor.nombre }} image"
     />
   </div>
-  <div class=" m-2 col-8">
+  <div class=" m-2 col-4">
     <h2>Nombre: {{ actor.nombre }}</h2>
     <div *ngIf="!actor.vivo; esle elseBlock">
       <p>Edad: {{ actor.edad }} (fallecido)</p>
@@ -17,7 +17,8 @@
     <p #elseBlock>Edad: {{ actor.edad }}</p>
     <p>Nacionalidad: {{ actor.nacionalidad }}</p>
   </div>  
-   <app-player [video]="actor.clip"></app-player>
-    
+  <div class="col-4">
+    <app-player [video]="actor.clip"></app-player>
+  </div>  
 </div>
 

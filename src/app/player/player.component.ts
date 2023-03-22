@@ -12,15 +12,5 @@ import { Component, Input } from '@angular/core';
 export class PlayerComponent {
   
   @Input() video: string;
-  ruta: string= "../assests/media/";
-  urlVideo: string;
-
-  constructor(){
-    this.urlVideo= this.ruta + this.video;
-  }
-
-  ngOnInit(){
-    
-  }
 
 }
