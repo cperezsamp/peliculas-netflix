@@ -41,7 +41,9 @@ export class BuscadorComponent {
   }
 
   onWrite(){
-    this.write= true;
+    if(this.nombreActor != "" || this.nacionalidad != ""){
+      this.write= true;
+    }  
   }
 
 }

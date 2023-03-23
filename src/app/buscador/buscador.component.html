@@ -7,7 +7,7 @@
         <label>Edad maxima</label>
         <input type="number" [(ngModel)]="edadMaxima" name="edadMaxima">
         <label>Nacionalidad</label>
-        <input type="text" placeholder="britanica"  [(ngModel)]="nacionalidad" name="nacionalidad">
+        <input type="text" placeholder="britanica"  [(ngModel)]="nacionalidad" name="nacionalidad" >
         <!-- <label>Esta vivo</label>
        <select name="select" [(ngModel)]="isAlive" name="isAlive">
             <option value="" ></option>
@@ -16,8 +16,10 @@
         </select>-->
     </div>
     <!--<div>{{ nombreActor | buscador: edadMinima:edadMaxima:nacionalidad:isAlive }} </div>-->
-    <div *ngFor="let actor of actores | buscador:nombreActor:edadMinima:edadMaxima:nacionalidad">
-        {{actor.nombre}}
+    <div *ngIf="write">
+        <div *ngFor="let actor of actores | buscador:nombreActor:edadMinima:edadMaxima:nacionalidad">
+            {{actor.nombre}}
+        </div>
     </div>
     
     
