@@ -1,5 +1,5 @@
 <form>
-    <input type="text" placeholder="Buscar actor" [(ngModel)]="nombreActor" name="nombreActor" (keydown)="onWrite()" />
+    <input type="text" placeholder="Buscar actor" [(ngModel)]="nombreActor" name="nombreActor" (keyup)="onWrite()" />
     <button (click)="changeDesplegable()">Filtrar</button>
     <div *ngIf="desplegable">
         <label>Edad minima</label>
@@ -8,23 +8,12 @@
         <input type="number" [(ngModel)]="edadMaxima" name="edadMaxima">
         <label>Nacionalidad</label>
         <input type="text" placeholder="britanica"  [(ngModel)]="nacionalidad" name="nacionalidad" >
-        <!-- <label>Esta vivo</label>
-       <select name="select" [(ngModel)]="isAlive" name="isAlive">
-            <option value="" ></option>
-            <option value="Si" >Si</option>
-            <option value="No" >No</option>    
-        </select>-->
+
     </div>
-    <!--<div>{{ nombreActor | buscador: edadMinima:edadMaxima:nacionalidad:isAlive }} </div>-->
     <div *ngIf="write">
         <div *ngFor="let actor of actores | buscador:nombreActor:edadMinima:edadMaxima:nacionalidad">
-            {{actor.nombre}}
+            <a href="/actor/{{ actor.id }}">{{actor.nombre}}</a>
         </div>
     </div>
     
-    
-    <!--Esto pasa varios valores al pipe. El value del pipe sera lo que esta a la izquierda
-    del pipe, mientras que lo que va a su derecha separado por dos puntos sera cada uno de los varlores del array args por orden-->
-    
-
 </form>

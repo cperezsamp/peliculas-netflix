@@ -41,9 +41,15 @@ export class BuscadorComponent {
   }
 
   onWrite(){
-    if(this.nombreActor != "" || this.nacionalidad != ""){
+    if(this.nombreActor != ""){
       this.write= true;
-    }  
+    } 
+    else{
+      this.write= false;
+    } 
+    /*if(this.nombreActor == ""){
+      this.write= false;
+    }*/
   }
 
 }
