@@ -9,15 +9,12 @@ import { PeliculasService } from '../peliculas.service';
 })
 export class PeliculasComponent {
   peliculas: Pelicula[];
-  //actores: Actor;
 
   constructor(private peliculasService: PeliculasService) {
-    this.peliculas= peliculasService.peliculas;
+    this.peliculas = peliculasService.peliculas;
   }
 
- /* ngOnInit() {
-    this.pelicula = this.peliculasService.getPelicula(0)
-    this.actores = this.pelicula.personajes
-  }*/
+  ngOnInit() {
+  }
 
 }

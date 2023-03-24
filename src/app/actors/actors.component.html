@@ -1,23 +1,11 @@
 
 <div >
-    <div> 
-        <img class="m-1"src={{personaje.actor.imagen}} alt="Pelicula 1 image">
-        <div >
-            <h6> <a href="/actor/{{ personaje.actor.id }}">{{personaje.actor.nombre}}</a> as {{personaje.nombrePersonaje}}</h6>
-            <p>{{personaje.descripcion}}</p>
+    <div>
+        <img class="m-1"src={{personaje.actor.imagen}} alt="Pelicula 1 image">      
+        <div>
+            <h6>  <a href="/actor/{{ personaje.actor.id }}">{{personaje.actor.nombre}}</a> as {{personaje.nombrePersonaje}}</h6>
+            <p class="desc-personaje"> {{personaje.descripcion.charAt(0).toUpperCase() + personaje.descripcion.slice(1)}}</p>
         </div>
         
     </div>
 </div>
-<!--
-<div class="wrapper">
-    <div class="personaje-box" > 
-        <img class="img-personaje" src={{personaje.actor.imagen}} alt="Pelicula 1 image">
-        <div class="desc-personaje">
-            <h6>{{personaje.actor.nombre}} as {{personaje.nombrePersonaje}}</h6>
-            <p>{{personaje.descripcion}}</p>
-        </div>
-        
-    </div>
-</div>
--->
