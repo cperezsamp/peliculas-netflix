@@ -1,27 +1,17 @@
-.wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+img {
+    height: 250px;
 }
 
-.personaje-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 200px;
-    padding: 5px;
-    margin-right: 10px;
-    gap: 10px;
-
+a {
+    color: white;
+    text-decoration: none;
 }
 
-.img-personaje {
-    width: 190px;
-    height: 200px;
-    object-fit: cover;
+a:hover {
+    color: grey;
+    text-decoration: underline;
 }
 
 .desc-personaje {
-    margin-bottom: 0px;
+    font-weight: 100;
 }
