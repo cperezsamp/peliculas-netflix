@@ -20,6 +20,7 @@ export class BuscadorComponent {
   nacionalidad: string;
   write: boolean;
   actores: Actor[];
+  icon: string;
 
   constructor(private actoresService: ActoresService){
     this.desplegable= false;
@@ -29,14 +30,18 @@ export class BuscadorComponent {
     this.nacionalidad= "";
     this.write= false;
     this.actores= actoresService.actores;
+    this.icon= "../assets/images/icons/down-arrow.png";
   }
 
   changeDesplegable(){
     if(this.desplegable){
       this.desplegable= false;
+      this.icon= "../assets/images/icons/down-arrow.png";
+
     }
     else{
       this.desplegable= true;
+      this.icon= "../assets/images/icons/up-arrow.png";
     }
   }
 
@@ -47,9 +52,6 @@ export class BuscadorComponent {
     else{
       this.write= false;
     } 
-    /*if(this.nombreActor == ""){
-      this.write= false;
-    }*/
   }
 
 }

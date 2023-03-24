@@ -1,6 +1,6 @@
 <form>
     <input type="text" placeholder="Buscar actor" [(ngModel)]="nombreActor" name="nombreActor" (keyup)="onWrite()" />
-    <button (click)="changeDesplegable()">Filtrar</button>
+    <button ><img  src={{icon}} height="20pt" width="20pt" (click)="changeDesplegable()" ></button>
     <div *ngIf="desplegable">
         <label>Edad minima</label>
         <input type="number"  [(ngModel)]="edadMinima" name="edadMinima">
