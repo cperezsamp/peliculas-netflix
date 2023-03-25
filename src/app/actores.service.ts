@@ -19,6 +19,10 @@ export class ActoresService {
     this.actores.push(new Actor(6, "Al Pacino", 82, "clip2.mp4", "estadounidense", true, "assets/images/actors/alpacino.jpeg"));
     this.actores.push(new Actor(7, "Robert Duvall", 92, "clip3.mp4", "estadounidense", true, "assets/images/actors/roberduvall.jpeg"));
     this.actores.push(new Actor(8, "James Caan", 82, "clip4.mp4", "estadounidense", false, "assets/images/actors/jamescaan.jpeg"));
+    this.actores.push(new Actor(9, "Tom Cruise", 60, "clip.mp4", "estadounidense", true, "assets/images/actors/tomcruise.jpeg"));
+    this.actores.push(new Actor(10, "Miles Teller", 36, "clip.mp4", "estadounidense", true, "assets/images/actors/milesteller.jpeg"));
+    this.actores.push(new Actor(11, "Jon Hamm", 52, "clip.mp4", "estadounidense", true, "assets/images/actors/jonhamm.jpeg"));
+    this.actores.push(new Actor(12, "Jennifer Connelly", 52, "clip.mp4", "estadounidense", true, "assets/images/actors/jenniferconnelly.jpeg"));
 
   }
 
@@ -27,7 +31,7 @@ export class ActoresService {
   }
 
   //esto no devuelve nada
-  findOneById(id: number): Actor{
+  findOneById(id: number): Actor {
     /*for(let i= 0; i<this.actores.length;i++){
       if(this.actores[i].id=== id){
         return this.actores[i];
