@@ -1,4 +1,13 @@
-img {
+.card {
+    width: 180px;
+    border-radius: 0%;
+    border: none;
+    background-color: black;
+}
+
+.card-img-top {
+    border-radius: 0%;
+    object-fit: cover;
     height: 250px;
 }
 

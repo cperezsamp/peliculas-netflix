@@ -40,12 +40,4 @@ export class PeliculasService {
     this.elPadrino.addPersonaje( new Personaje(actores.jamesCaan, "Santino Corleone", "Hijo mayor del padrino"));*/
   }
 
-  getPelicula(i: number) {
-    return this.peliculas[i]
-  }
-
-  getPersonajes(i: number) {
-    return this.peliculas[i].personajes
-  }
-
 }
