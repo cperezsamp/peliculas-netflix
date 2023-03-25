@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { PeliculasService } from './peliculas.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'peliculas-netflix';
   pelicula: any;
   actores: any;
 
-  constructor(private peliculasService: PeliculasService) {
+  constructor() {
   }
 
-  ngOnInit() {
-    this.pelicula = this.peliculasService.getPelicula(0)
-    this.actores = this.pelicula.personajes
-  }
 
 }
