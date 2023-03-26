@@ -12,14 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { ActorsComponent } from './actors/actors.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { ActorDetailsComponent } from './actor-details/actor-details.component';
-import { RouterModule, Routes } from '@angular/router';
 
 
-
-const routes: Routes=[
- {path: '', component:PeliculasComponent} ,
- {path: 'actor/:id', component:ActorDetailsComponent},
-];
 
 
 @NgModule({
@@ -36,7 +30,6 @@ const routes: Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
   ],
   providers: [
     ActoresService,
