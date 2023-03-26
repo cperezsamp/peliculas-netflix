@@ -9,19 +9,17 @@ import { Actor } from './models/actor';
 })
 export class BuscadorPipe implements PipeTransform {
 
-  filteredActors :Actor[];
+  actores: Actor[];
 
-  constructor(private actoresService: ActoresService, private route:ActivatedRoute, private router:Router){
-    actoresService.actores;
+  constructor(private actoresService: ActoresService, private route: ActivatedRoute, private router: Router) {
+    this.actores = actoresService.actores;
   }
 
 
   transform(value: any, ...args: any[]): any {
-    
-    
     const result = [];
-    for(let actor of value){
-      if((actor.nombre.toUpperCase()).includes(args[0].toUpperCase()) && (actor.edad > args[1]  && actor.edad < args[2]) && (actor.nacionalidad.toUpperCase()).includes(args[3].toUpperCase())){
+    for (let actor of value) {
+      if ((actor.nombre.toUpperCase()).includes(args[0].toUpperCase()) && (actor.edad > args[1] && actor.edad < args[2]) && (actor.nacionalidad.toUpperCase()).includes(args[3].toUpperCase())) {
         result.push(actor);
       }
     }

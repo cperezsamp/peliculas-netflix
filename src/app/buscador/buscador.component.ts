@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 
 export class BuscadorComponent {
 
-
   desplegable: boolean;
   nombreActor: string;
   edadMinima: number;
@@ -22,36 +21,45 @@ export class BuscadorComponent {
   actores: Actor[];
   icon: string;
 
-  constructor(private actoresService: ActoresService){
-    this.desplegable= false;
-    this.nombreActor= "";
-    this.edadMinima= 0;
-    this.edadMaxima= 150;
-    this.nacionalidad= "";
-    this.write= false;
-    this.actores= actoresService.actores;
-    this.icon= "../assets/images/icons/down-arrow.png";
+  constructor(private actoresService: ActoresService) {
+    this.desplegable = false;
+    this.nombreActor = "";
+    this.edadMinima = 0;
+    this.edadMaxima = 150;
+    this.nacionalidad = "";
+    this.write = false;
+    this.actores = actoresService.actores;
+    this.icon = "../assets/images/icons/down-arrow.png";
   }
 
-  changeDesplegable(){
-    if(this.desplegable){
-      this.desplegable= false;
-      this.icon= "../assets/images/icons/down-arrow.png";
+  changeDesplegable() {
+    if (this.desplegable) {
+      this.desplegable = false;
+      this.icon = "../assets/images/icons/down-arrow.png";
 
     }
-    else{
-      this.desplegable= true;
-      this.icon= "../assets/images/icons/up-arrow.png";
+    else {
+      this.desplegable = true;
+      this.icon = "../assets/images/icons/up-arrow.png";
     }
   }
 
-  onWrite(){
-    if(this.nombreActor != ""){
-      this.write= true;
-    } 
-    else{
-      this.write= false;
-    } 
+  onWrite() {
+    if (this.nombreActor != "") {
+      this.write = true;
+    }
+    else {
+      this.write = false;
+    }
+  }
+
+  onSubmit() {
+    if (this.edadMinima >= 0 || this.edadMaxima > 0 || this.nacionalidad != "") {
+      this.write = true;
+    }
+    else {
+      this.write = false;
+    }
   }
 
 }
