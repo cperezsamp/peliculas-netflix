@@ -1,23 +1,27 @@
-<div class="shearch">
+<div class="container row">
+
+<section class="shearch col-3">
   <app-buscador></app-buscador>
-</div>
-<div class="row m-2">
-  <div class="actor-details float-left m-1 p-2 col-2">
+</section>
+<section class="row col-9">
+  <div class="col-5">
     <img class="actor-img"
       src="{{ actor.imagen }}"
       alt="{{ actor.nombre }} image"
     />
   </div>
-  <div class=" m-2 col-4">
-    <h2>Nombre: {{ actor.nombre }}</h2>
-    <div *ngIf="!actor.vivo; esle elseBlock">
-      <p>Edad: {{ actor.edad }} (fallecido)</p>
-    </div>
-    <p #elseBlock>Edad: {{ actor.edad }}</p>
-    <p>Nacionalidad: {{ actor.nacionalidad }}</p>
-  </div>  
-  <div class="col-4">
-    <app-player [video]="actor.clip"></app-player>
-  </div>  
+  <div class="desc-box col-7">
+    <div class="row">
+      <h2>Nombre: {{ actor.nombre }}</h2>
+      <p *ngIf="!actor.vivo; esle elseBlock">
+        Edad: {{ actor.edad }} (fallecido)
+      </p>
+      <ng-template #elseBlock>Edad: {{ actor.edad }}</ng-template>
+      <p>Nacionalidad: {{ actor.nacionalidad }}</p>
+    </div>  
+    <div class="row">
+      <app-player [video]="actor.clip"></app-player>
+    </div>  
+  </div>
+</section>
 </div>
-
