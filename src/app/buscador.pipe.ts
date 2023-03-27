@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ActoresService } from './actores.service';
 import { Actor } from './models/actor';
 
@@ -11,7 +10,7 @@ export class BuscadorPipe implements PipeTransform {
 
   actores: Actor[];
 
-  constructor(private actoresService: ActoresService, private route: ActivatedRoute, private router: Router) {
+  constructor(private actoresService: ActoresService) {
     this.actores = actoresService.actores;
   }
 
