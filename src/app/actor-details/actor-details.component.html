@@ -18,10 +18,11 @@
       </p>
       <ng-template #elseBlock>Edad: {{ actor.edad }}</ng-template>
       <p>Nacionalidad: {{ actor.nacionalidad }}</p>
-    </div>  
+      <p class="descripcion">Información: {{actor.descripcion}}</p>
+    </div>
     <div class="row">
       <app-player [video]="actor.clip"></app-player>
-    </div>  
+    </div>
   </div>
 </section>
 </div>
